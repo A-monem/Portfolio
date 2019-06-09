@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import Title from './Title'
-import Card from './Card'
-
-
+import SkillCard from './SkillCard'
 
 export default class Skills extends Component {
 
@@ -15,11 +13,12 @@ export default class Skills extends Component {
     render() {
 
         return (
-            <div className='skills' id='skills'>
+            <div className='section' id='skills'>
                 <Title name='Skills' />
-                <Card cardName='Front-End' items={this.state.frontEnd} direction={-50} delay={200}/>
-                <Card cardName='Back-End' items={this.state.backEnd} direction={50} delay={300}/>
-                <Card cardName='Other' items={this.state.other} direction={-50} delay={400}/>
+                {/* this can be optimized using .map */}
+                <SkillCard cardName='Front-End' items={this.state.frontEnd} direction={-50} delay={200}/>
+                <SkillCard cardName='Back-End' items={this.state.backEnd} direction={50} delay={300}/>
+                <SkillCard cardName='Other' items={this.state.other} direction={-50} delay={400}/>
             </div>
         )
     }

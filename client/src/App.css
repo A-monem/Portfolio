@@ -14,7 +14,7 @@ body{
 }
 
 .home-background{
-    background-image: url('./images/home-background.jpg');
+    background-image: url('./images/header.jpeg');
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover;
@@ -28,22 +28,22 @@ body{
 }
 
 .home img{
-    width: 200px;
-    height: 200px;
+    width: 320px;
+    height: 300px;
     border-radius: 50%;
     margin-top: 30px;
 } 
 
 .home h1{
     font-family: 'Ubuntu', sans-serif;
-    color: white;
+    color:  #212529;
 } 
 
 .home h3{
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0;
     margin-bottom: 200px;
-    color: white;
+    color:  #212529;
 }
 
 @media screen and (max-width: 1000px) {
@@ -87,7 +87,8 @@ body{
 .sticky{
     position: -webkit-sticky;
     position: sticky;
-    top: 0; 
+    top: 0;
+    z-index: 5;
 } 
 
 .nav-list > .active {
@@ -95,20 +96,7 @@ body{
     border-bottom: 2px solid white;
 }
 
-.projects{
-    margin-top: 200px;
-    padding-top: 400px;
-    background-color: aqua;
-}
-
-.contact{
-    padding-top: 400px;
-    background-color: aquamarine;
-}
-
-/* skills */
-
-.skills{
+.section{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -117,25 +105,21 @@ body{
     
 }
 
-.card{
-    margin-top: 30px;
-    width: 60vw;
-    z-index: -1;
+.section hr{
+    color: #212529;
+    background-color: #212529;
+    width: 90vw;
+    height: 10px;
 }
 
-.card-body{
+/* skills */
+
+.center{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-
-/* ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center; 
-} */
 
 li{
     display: inline;
@@ -147,10 +131,47 @@ li{
     height: 80px;
 }
 
-.logo2{
+.logo-wide{
     width: 150px;
     height: 100px;
 }
 
-svg text {display: none;}
-svg g:hover text {display: block;}
+
+
+/* Projects */
+
+.project{
+    color: #212529;
+    vertical-align: middle;
+}
+
+.project h1{
+    margin-bottom: 40px;
+}
+
+.project h4{
+    line-height: unset;
+    vertical-align: center;
+    height: 100%;
+}
+.fa-plus-circle{
+    line-height: unset;
+    color: rgba(0, 110, 255, 0.438);
+}
+
+.project button:focus{
+    box-shadow: unset;
+}
+
+/* contact */
+
+#contact{
+    /* background-color: rgba(218, 211, 211, 0.473); */
+    background-image: url('./images/trianglify1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-info{
+    width: 90vw;
+}
