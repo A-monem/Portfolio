@@ -8,11 +8,6 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
-
-app.get('/api/hello', (req, res) => {
-    res.send('Hello from express')
-})
-
 app.post('/api/email', (req, res) => {
     console.log(req.body)
     let transporter = nodeMailer.createTransport({
@@ -29,13 +24,11 @@ app.post('/api/email', (req, res) => {
         subject: 'Portfolio Message', // Subject line
         text: `${req.body.message}`,
         html: `
-        <h3>first name: ${req.body.firstName}</h3>
+        <h3>Name: ${req.body.firstName} ${req.body.lastName}</h3>
         
-        <h3>last name: ${req.body.lastName}</h3>
+        <h3>E-mail: ${req.body.email}</h3>
         
-        <h3>e-mail: ${req.body.email}</h3>
-        
-        <p>${req.body.message}</p>`
+        <p>Message: ${req.body.message}</p>`
     }
 
     transporter.sendMail(mailOptions, (err, info) => {

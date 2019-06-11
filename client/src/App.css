@@ -92,7 +92,6 @@ body{
 } 
 
 .nav-list > .active {
-    /* border-bottom: 2px solid #1248A5; */
     border-bottom: 2px solid white;
 }
 
@@ -173,5 +172,17 @@ li{
 }
 
 .contact-info{
-    width: 90vw;
+    width: 95vw;
 }
+
+.fa-linkedin{
+    color: #0077B5;
+}
+
+.fa-github-square{
+    color: #333;
+}
+
+.swal-overlay {
+    background-color: rgba(43, 165, 137, 0.45);
+  }
