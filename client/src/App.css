@@ -100,7 +100,6 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 30px;
     
 }
 
@@ -141,7 +140,11 @@ li{
 
 .project{
     color: #212529;
-    vertical-align: middle;
+    height:  100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project h1{
@@ -165,10 +168,10 @@ li{
 /* contact */
 
 #contact{
-    /* background-color: rgba(218, 211, 211, 0.473); */
     background-image: url('./images/trianglify1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height:  100vh;
 }
 
 .contact-info{

@@ -30,8 +30,7 @@ export default class Projects extends Component{
         
     render(){
         return (
-            <div className='section project' id='projects'>
-                <hr/>
+            <div className='project' id='projects'>
                 <Title name='Projects' />
                 <div className='container'>
                     <VisibilitySensor partialVisibility={false} onChange={this.onChangeVisibility} active={!this.state.visible}>

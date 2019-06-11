@@ -13,7 +13,7 @@ export default class Skills extends Component {
     render() {
 
         return (
-            <div className='section' id='skills'>
+            <div className='section mt-3' id='skills'>
                 <Title name='Skills' />
                 {/* this can be optimized using .map */}
                 <SkillCard cardName='Front-End' items={this.state.frontEnd} direction={-50} delay={200}/>

@@ -1,7 +1,10 @@
 import React, { Component } from 'react'
 import Title from './Title'
 import Maps from './Maps'
-import Swal from "sweetalert2";  
+import Swal from "sweetalert2";
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export default class Contact extends Component {
 
@@ -15,7 +18,7 @@ export default class Contact extends Component {
     handlePostRequest = (e) => {
         e.preventDefault()
 
-        const { firstName, lastName, email, message, visible, alert } = this.state
+        const { firstName, lastName, email, message } = this.state
 
         fetch('/api/email', {
             method: 'POST',
@@ -58,10 +61,11 @@ export default class Contact extends Component {
           }) 
     }  
 
-    // AIzaSyDZL1eTJJFjrRkLM448RutssEl6s-Mytj0
     render() {
+        
         return (
-            <div className='section m-0 mt-5 p-0' id='contact'>
+            
+            <div className='section' id='contact'>
                 <br />
                 <Title name='Contact' />
                 <div className='contact-info' >
@@ -70,7 +74,7 @@ export default class Contact extends Component {
 
                         <div className="col-md-6 center">
                             <Maps
-                                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZL1eTJJFjrRkLM448RutssEl6s-Mytj0&v=3.exp&libraries=geometry,drawing,places"
+                                googleMapURL={`https://maps.googleapis.com/maps/api/js?key=${process.env.REACT_APP_GOOGLE}&v=3.exp&libraries=geometry,drawing,places`}
                                 loadingElement={<div style={{ height: `100%` }} />}
                                 containerElement={<div style={{ height: `100%`, width: '80%' }} />}
                                 mapElement={<div style={{ height: `100%`, filter: 'grayscale(100%)' }} />}

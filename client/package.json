@@ -11,7 +11,9 @@
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.11",
     "react-spring": "^8.0.20",
-    "react-visibility-sensor": "^5.0.2"
+    "react-visibility-sensor": "^5.0.2",
+    "sweetalert2": "^8.12.1",
+    "sweetalert2-react-content": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -36,7 +38,9 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "dotenv": "^8.0.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
