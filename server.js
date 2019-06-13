@@ -7,6 +7,12 @@ const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
+app.use(express.static("client/build"))
+
+app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
+  });
+  
 
 app.post('/api/email', (req, res) => {
     console.log(req.body)

@@ -5,12 +5,11 @@
     "node":"10.15.3",
     "npm":"6.4.1"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "client": "cd client && npm start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\" "
   },
   "repository": {
     "type": "git",
