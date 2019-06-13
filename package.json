@@ -22,7 +22,6 @@
   "bugs": {
     "url": "https://github.com/A-monem/Portfolio/issues"
   },
-  "homepage": "https://github.com/A-monem/Portfolio#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
     "dotenv": "^8.0.0",
