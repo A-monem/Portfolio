@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Particles from 'react-particles-js'
 import image from '../images/Abdelmoneim.jpg'
 import { Link } from 'react-scroll'
+import resume from '../resume/resume.pdf'
 
 
 const part = {
@@ -116,13 +117,15 @@ export default class Home extends Component {
         <img src={image} alt='Abdelmoneim' />
         <h1>Hi, my name is Abdelmoneim Nafea</h1>
         <h3>and I am a Front-End Developer</h3>
+        <a href={resume} download="resume" role="button" className='btn btn-outline-dark mb-5'><i className="fas fa-download"></i> Resume</a>
         <Link
           activeClass="active"
           to="skills"
           spy={true}
           smooth={true}
           offset={-75}
-          duration={500}><i className="fas <i fa-arrow-alt-circle-down fa-3x"></i></Link>
+          duration={500}><i className="fas <i fa-arrow-alt-circle-down fa-3x"></i>
+        </Link>
       </div>
 
     )

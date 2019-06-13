@@ -65,7 +65,7 @@ export default class Contact extends Component {
         
         return (
             
-            <div className='section' id='contact'>
+            <div className='contact' id='contact'>
                 <br />
                 <Title name='Contact' />
                 <div className='contact-info' >
@@ -80,8 +80,7 @@ export default class Contact extends Component {
                                 mapElement={<div style={{ height: `100%`, filter: 'grayscale(100%)' }} />}
                             />
                         </div>
-
-                        <div className="col-md-6">
+                        <div className="col-md-6 center">
                                 <form onSubmit={this.handlePostRequest} >
                                     <div className='form-group'>
                                         <label>Name</label>

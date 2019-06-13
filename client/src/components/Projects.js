@@ -30,22 +30,22 @@ export default class Projects extends Component{
         
     render(){
         return (
-            <div className='project' id='projects'>
+            <div className='project my-5' id='projects'>
                 <Title name='Projects' />
                 <div className='container'>
-                    <VisibilitySensor partialVisibility={false} onChange={this.onChangeVisibility} active={!this.state.visible}>
+                    <VisibilitySensor partialVisibility={true} onChange={this.onChangeVisibility} active={!this.state.visible}>
                         {({ isVisible }) => (
                             <Trail
                                 items={projects}
                                 keys={project => project.name}
-                                from={{ marginLeft: -20, opacity: 0, transform: 'translateY(-40px)' }}
+                                from={{ marginLeft: -20, opacity: 0, transform: 'translateY(-40px)'}}
                                 to={{
                                     marginLeft: isVisible ? 20 : -20,
                                     opacity: isVisible ? 1 : 0,
                                     transform: isVisible ? 'translateY(0)' : 'translateY(-40px)'
                                 }}>
                                 {project => props => (
-                                    <div style={props} className='mb-2'>
+                                    <div style={props} className='slide mb-2'>
                                         <div className='row d-flex flex-row justify-content-center align-items-center bg-light'>
                                             <h4 className='m-0 p-2'>{project.title}</h4>
                                             <button className='btn ml-auto' type='button' data-toggle='collapse' data-target={`#collapse${project.name}`} aria-expanded='false' aria-controls='collapseExample'>

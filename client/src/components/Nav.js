@@ -29,7 +29,7 @@ export default class Nav extends Component {
                                 to="projects"
                                 spy={true}
                                 smooth={true}
-                                offset={-50}
+                                offset={-70}
                                 duration={500}
                             >Projects</Link>
                             <Link
