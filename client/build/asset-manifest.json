@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.662fe486.chunk.css",
+    "main.js": "./static/js/main.f7c20dcd.chunk.js",
+    "main.js.map": "./static/js/main.f7c20dcd.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.435ae13f.chunk.js": "./static/js/2.435ae13f.chunk.js",
+    "static/js/2.435ae13f.chunk.js.map": "./static/js/2.435ae13f.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.089acdfce4059ca503ce25ef1a310e3c.js": "./precache-manifest.089acdfce4059ca503ce25ef1a310e3c.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.662fe486.chunk.css.map": "./static/css/main.662fe486.chunk.css.map",
+    "static/media/Abdelmoneim.jpg": "./static/media/Abdelmoneim.fd77e7c4.jpg",
+    "static/media/basketball.PNG": "./static/media/basketball.fb70dddf.PNG",
+    "static/media/blog.png": "./static/media/blog.c1ee775d.png",
+    "static/media/gift.jpg": "./static/media/gift.e3852db5.jpg",
+    "static/media/App.css": "./static/media/trianglify1.02a0066b.png",
+    "static/media/resume.pdf": "./static/media/resume.c1bbcf24.pdf",
+    "static/media/war.png": "./static/media/war.88586d1d.png",
+    "static/media/weather.JPG": "./static/media/weather.be5d32ea.JPG",
+    "static/media/yelpcamp.jpg": "./static/media/yelpcamp.548038ab.jpg"
+  }
+}
