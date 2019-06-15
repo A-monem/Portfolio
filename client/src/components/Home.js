@@ -124,7 +124,7 @@ export default class Home extends Component {
           spy={true}
           smooth={true}
           offset={-75}
-          duration={500}><i className="fas <i fa-arrow-alt-circle-down fa-3x"></i>
+          duration={500}><i className="fas <i fa-arrow-alt-circle-down fa-2x"></i>
         </Link>
       </div>
 
